@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(315deg, #3E5151, #DECBA4);
+  padding: 15px;
+  color: #ffffff;
+}
+a{
+    text-decoration: underline;
+    color: #ffffff;
+}
+a:visited{
+    text-decoration: none;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  margin: auto;
+  width: 700px;
+  height: auto;
+  min-height: 500px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.head h1 {
+  text-align: start;
+  display: inline;
+  font-size: 50px;
+}
+.head span {
+  text-align: right;
+  font-size: 40px;
+}
+.head {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.to-do-input,
+.head,
+.to-do-list {
+  width: inherit;
+  text-align: center;
+}
+.to-do-input input {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: inherit;
+  font-size: 20px;
+  border-radius: 15px 0px 0px 15px;
+  padding: 15px 10px;
+  border: none;
+  color: #ffffff;
+}
+.to-do-input input:focus {
+  outline: none;
+}
+.to-do-input input::placeholder {
+  color: #aeaeae;
+}
+.to-do-input button {
+  width: 55px;
+  height: 55px;
+  font-size: 40px;
+  border-radius: 0px 15px 15px 0px;
+  border: none;
+  background-color: #3E5151;
+  color: #ffffff;
+}
+.to-do-input button:hover {
+  background-color: #2d3a3a;
+}
+.to-do-input {
+  display: flex;
+  padding: 20px 30px;
+}
+
+.input-controller textarea {
+  width: 80%;
+  outline: none;
+  border: none;
+  resize: none;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.update-controller {
+  display: none;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  margin: 10px 20px;
+}
+.update-controller .saveBtn {
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #3E5151;
+  border: none;
+  float: left;
+  margin-top: 5px;
+}
+.update-controller .saveBtn:hover {
+  background-color: #2d3a3a;
+}
+.input-controller {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-controller {
+  display: flex;
+  align-items: center;
+}
+.edit-controller i {
+  margin: 0 10px;
+}
+
+.edit-controller i:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 95%;
+    }
+    .head span{
+        font-size: 30px;
+    }
+    .head h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:500px) {
+    .head span{
+        font-size: 20px;
+    }
+    .head h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:400px) {
+    .head{
+        flex-direction: column;
+    }
+}
+
+
